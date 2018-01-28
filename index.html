@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="customized-bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light navbar_main">
+    <a class="navbar-brand" href="#">
+        <img src="src/logo.png" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Accessories</a>
+            </li>
+
+        </ul>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <form class="form-inline">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <img src="src/icon__search.png" alt="search"></button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <button type="button" class="btn btn-primary">
+                <img src="src/icon__cart.png" alt="search">
+            </button>
+            <button type="button" class="btn btn-primary">
+                <img src="src/icon__collapse.png" alt="search">
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="jumbotron">
+                <p class="lead text-uppercase">New collection</p>
+                <h1 class="display-4">New York Colorblock Tank</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cupiditate dolorum earum eveniet
+                    laudantium, maxime nobis nostrum odio odit quam, quasi qui, sed sequi sit.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+            <img class="img-fluid" src="src/product_img.png" alt="product-image">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="btn-group">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton__first"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>M</span>Medium size
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton__first">
+                        <a class="dropdown-item" href="#"><span>XS</span> Extra small</a>
+                        <a class="dropdown-item" href="#"><span>S</span> Small size</a>
+                        <a class="dropdown-item" href="#"><span>M</span> Medium size</a>
+                        <a class="dropdown-item" href="#"><span>L</span> Large size</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton__second"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        1
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton__second">
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                        <a class="dropdown-item" href="#">5</a>
+                    </div>
+                </div>
+            </div>
+            <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at autem consectetur facere ipsum iste
+                iusto laudantium officiis perferendis perspiciatis porro quaerat.
+            </p>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                <span>Delivery</span>
+                                <img src="src/icon__plus.png" alt="plus-icon">
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                <span>Return</span>
+                                <img src="src/icon__plus.png" alt="plus-icon">
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-12 col-md-6 col-lg-4">
+            <img class="float-left" src="src/product_img__small.png" alt="product-image">
+            <p class="lead text-uppercase">Pharell Williams</p>
+            <h5>NY Colorblock Top</h5>
+            <span>$299</span>
+            <div class="btn-group">
+                <div class="btn">f</div>
+                <div class="btn">f</div></div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <button class="btn btn-primary btn-lg text-uppercase">Add to cart</button>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+</html>

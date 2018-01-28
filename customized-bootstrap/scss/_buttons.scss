@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/buttons";
+
+.btn-primary {
+  @include button-variant($transparent, $transparent);
+  @include button-size(1.5rem, 2.5rem, .875rem, $input-btn-line-height, 2.5rem);
+  font-weight: $font-weight-bold;
+
+  &:focus,
+  &:not([disabled]):not(.disabled):active {
+    box-shadow: none;
+  }
+}
