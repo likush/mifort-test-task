@@ -1,3 +1,10 @@
+@media (max-width: 1199px) {
+    .img__product {
+        max-width: 450px;
+        padding-left: 30px;
+    }
+}
+
 @media (max-width: 991px) {
     .row_bordered {
         border: none;
@@ -25,11 +32,6 @@
 }
 
 @media (min-width: 992px) {
-    .img__product {
-        max-width: 450px;
-        padding-left: 30px;
-    }
-
     .slider_main {
         margin-left: 10px;
         margin-top: 20px;

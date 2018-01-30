@@ -1,17 +1,5 @@
 html {
     font-size: 14px;
-    height: 100%
-}
-
-body {
-    height: 100%;
-}
-
-.bg {
-    min-height: 100%;
-    background: url("../img/product_img-2.png") no-repeat;
-    background-size: cover;
-
 }
 
 /*navbar*/
@@ -33,7 +21,6 @@ body {
     bottom: 0;
 }
 
-
 .decorator_wrapper {
     background-color: #f5f2ec;
     overflow: hidden;
@@ -47,9 +34,6 @@ body {
     height: 600px;
     background: #fde18e; /* for old browsers */
     background: linear-gradient(135deg, #fde18e 0%, #f9e4a8 50%, #f7edd3 100%);
-}
-
-.content {
 }
 
 /*buttons*/
