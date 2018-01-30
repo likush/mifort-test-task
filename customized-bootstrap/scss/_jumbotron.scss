@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/scss/jumbotron";
+
+.jumbotron {
+  @include media-breakpoint-up(lg) {
+    padding: ($jumbotron-padding * 2) 0;
+  }
+
+  @include media-breakpoint-up(xs) {
+    margin-bottom: $jumbotron-padding;
+  }
+}
