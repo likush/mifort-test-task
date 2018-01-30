@@ -25,12 +25,17 @@ html {
 .decorator_wrapper {
     height: 65vh;
     background-color: #f5f2ec;
+    overflow: hidden;
+}
+.decorator_item {
+    position: absolute;
+    bottom: -30%;
+    width: 600px;
+    height: 600px;
+    background: #fde18e; /* for old browsers */
+    background: linear-gradient(135deg, #fde18e 0%, #f9e4a8 50%, #f7edd3 100%);
 }
 
-.decorator_item {
-    width: 500px;
-    height: 500px;
-}
 
 .content {
     background-color: white;
