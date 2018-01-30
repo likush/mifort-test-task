@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Khula:300,600" rel="stylesheet">
     <link rel="stylesheet" href="customized-bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-queries.css">
 </head>
 <body>
 
@@ -53,18 +54,20 @@
     </div>
 </nav>
 
-<div class="container-fluid d-none d-lg-block">
-    <div class="row justify-content-center decorator_wrapper">
-        <div class="col-lg-5">
-            <div class="rounded-circle decorator_item"></div>
+<div class="decorator_wrapper">
+    <div class="container d-none d-lg-block">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="rounded-circle decorator_item"></div>
+            </div>
         </div>
     </div>
 </div>
 
 
-<div class="container-fluid content">
+<div class="container justify-content-center content">
     <div class="row justify-content-between row_bordered">
-        <div class="col-12 col-md-6 col-lg-3 offset-lg-1">
+        <div class="col-12 col-md-6 col-lg-3">
             <div class="jumbotron jumbotron_main">
                 <p class="text-uppercase text_accent">New collection</p>
                 <h1 class="display-4">New York Colorblock Tank</h1>
@@ -73,7 +76,7 @@
                     laudantium, maxime nobis nostrum odio odit quam, quasi qui, sed sequi sit.</p>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 offset-lg-1">
+        <div class="col-12 col-md-6 col-lg-3 offset-lg-1 dropdown-collapse-block">
             <div class="btn btn-group btn-group_dropdown">
                 <div class="dropdown dropdown_sizes">
                     <button class="btn btn__custom btn__dropdown btn__dropdown_sizes dropdown-toggle" type="button"
@@ -126,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card border-bottom">
+                <div class="card border-bottom border-bottom__lg_none">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                             <button class="btn btn__custom btn__collapse" data-toggle="collapse"
@@ -177,10 +180,9 @@
         </div>
     </div>
     <div class="row d-none d-lg-block">
-        <div class="col-lg-5 m-auto d-flex justify-content-center">
+        <div class="col-lg-4 col-xl-5 m-auto d-flex justify-content-center">
             <img class="img__product" src="img/product_img.png" alt="product-image">
             <!--<img class="img__product" src="img/product_img-2.png" alt="product-image">-->
-
         </div>
     </div>
 
