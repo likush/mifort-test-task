@@ -8,6 +8,7 @@ $font-family-base: "Khula", sans-serif;
 
 //headings
 $headings-font-family: "Roboto", sans-serif;
+$display4-size: 3rem !default;
 
 //forms
 $input-color: #000;
@@ -30,12 +31,10 @@ $jumbotron-bg: $transparent;
 //card
 $card-border-color: #f2f0ec;
 $card-cap-bg: #fff;
-$card-bg:  $transparent;
-
+$card-bg: $transparent;
 
 //buttons
 $input-btn-focus-box-shadow: none;
-
 $border-radius: none;
 
 @import "../../node_modules/bootstrap/scss/variables";

@@ -1,11 +1,38 @@
+@media (min-width: 992px) {
+    .jumbotron_main {
+        margin-top: -170px;
+    }
+
+    .slider_main {
+        margin-top: -72px;
+        margin-bottom: 100px;
+    }
+
+    .img__product {
+        max-width: 100%;
+    }
+}
+
+
 html {
     font-size: 14px;
+    height: 100%
+}
+
+body {
+    height: 100%;
+}
+
+.bg {
+    min-height: 100%;
+    background: url("../img/product_img-2.png") no-repeat;
+background-size: cover;
+
 }
 
 /*navbar*/
 .navbar_main {
     background-color: #f5f2ec;
-    /*font-size: .875rem;*/
 }
 
 .nav-link:hover {
@@ -19,23 +46,27 @@ html {
 /*decorator*/
 .img__product {
     position: absolute;
-
+    bottom: 0;
+    max-width: 580px;
+    margin: auto;
 }
 
 .decorator_wrapper {
-    height: 65vh;
+    height: 500px;
     background-color: #f5f2ec;
     overflow: hidden;
 }
+
 .decorator_item {
-    position: absolute;
-    bottom: -30%;
+    overflow: visible;
+    position: relative;
+    margin: auto;
+    bottom: -20%;
     width: 600px;
     height: 600px;
     background: #fde18e; /* for old browsers */
     background: linear-gradient(135deg, #fde18e 0%, #f9e4a8 50%, #f7edd3 100%);
 }
-
 
 .content {
     background-color: white;
