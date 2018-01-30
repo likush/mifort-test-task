@@ -1,0 +1,18 @@
+@import "../../node_modules/bootstrap/scss/card";
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding: .3rem 2.5rem;
+}
+
+.card-header {
+  border-bottom: none;
+}
+
+.card-subtitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

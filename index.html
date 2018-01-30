@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,600" rel="stylesheet">
     <link rel="stylesheet" href="customized-bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -11,8 +13,8 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light navbar_main">
-    <a class="navbar-brand" href="#">
-        <img src="src/logo.png" alt="logo">
+    <a class="navbar-brand logo" href="#">
+        <img src="img/logo.png" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +22,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto font-weight-bold">
             <li class="nav-item">
                 <a class="nav-link" href="#">Men</a>
             </li>
@@ -35,41 +37,48 @@
             </li>
 
         </ul>
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                    <img src="src/icon__search.png" alt="search"></button>
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <button type="button" class="btn btn-primary">
-                <img src="src/icon__cart.png" alt="search">
-            </button>
-            <button type="button" class="btn btn-primary">
-                <img src="src/icon__collapse.png" alt="search">
-            </button>
-        </div>
+
+        <form class="form-inline">
+            <button class="btn btn__custom my-2 my-sm-0" type="submit">
+                <img src="img/icon__search.png" alt="search"></button>
+            <input class="form-control font-weight-bold mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <button type="button" class="btn btn__custom nav__btn nav__btn_cart">
+            <img src="img/icon__cart.png" alt="cart">
+        </button>
+        <button type="button" class="btn btn__custom nav__btn nav__btn_collapsed d-none d-lg-block">
+            <img src="img/icon__collapse.png" alt="collapsed-menu">
+        </button>
+
     </div>
 </nav>
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-center decorator_wrapper">
+        <div class="col-lg-4">
+            <div class="rounded-circle decorator_item"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid content">
+    <div class="row justify-content-between row_bordered">
         <div class="col-12 col-md-6 col-lg-4">
             <div class="jumbotron">
-                <p class="lead text-uppercase">New collection</p>
+                <p class="text-uppercase text_accent">New collection</p>
                 <h1 class="display-4">New York Colorblock Tank</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cupiditate dolorum earum eveniet
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cupiditate
+                    dolorum earum eveniet
                     laudantium, maxime nobis nostrum odio odit quam, quasi qui, sed sequi sit.</p>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
-            <img class="img-fluid" src="src/product_img.png" alt="product-image">
-        </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="btn-group">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton__first"
+            <div class="btn btn-group btn-group_dropdown">
+                <div class="dropdown dropdown_sizes">
+                    <button class="btn btn__custom btn__dropdown btn__dropdown_sizes dropdown-toggle" type="button"
+                            id="dropdownMenuButton__first"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span>M</span>Medium size
+                        <span class="btn-dropdown__divider border-right">M</span>Medium size
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton__first">
                         <a class="dropdown-item" href="#"><span>XS</span> Extra small</a>
@@ -78,8 +87,9 @@
                         <a class="dropdown-item" href="#"><span>L</span> Large size</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton__second"
+                <div class="dropdown dropdown_number">
+                    <button class="btn btn__custom btn__dropdown dropdown-toggle" type="button"
+                            id="dropdownMenuButton__second"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         1
                     </button>
@@ -91,18 +101,19 @@
                     </div>
                 </div>
             </div>
-            <p class="lead">
+            <p class="text-muted">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at autem consectetur facere ipsum iste
                 iusto laudantium officiis perferendis perspiciatis porro quaerat.
             </p>
             <div id="accordion">
-                <div class="card">
+                <div class="card border-bottom">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne"
+                            <button class="btn btn__custom btn__collapse" data-toggle="collapse"
+                                    data-target="#collapseOne"
                                     aria-expanded="true" aria-controls="collapseOne">
                                 <span>Delivery</span>
-                                <img src="src/icon__plus.png" alt="plus-icon">
+                                <img src="img/icon__plus.png" alt="plus-icon">
                             </button>
                         </h5>
                     </div>
@@ -114,13 +125,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card border-bottom">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                            <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            <button class="btn btn__custom btn__collapse" data-toggle="collapse"
+                                    data-target="#collapseTwo"
                                     aria-expanded="false" aria-controls="collapseTwo">
                                 <span>Return</span>
-                                <img src="src/icon__plus.png" alt="plus-icon">
+                                <img src="img/icon__plus.png" alt="plus-icon">
                             </button>
                         </h5>
                     </div>
@@ -138,28 +150,47 @@
     </div>
     <div class="row justify-content-between">
         <div class="col-12 col-md-6 col-lg-4">
-            <img class="float-left" src="src/product_img__small.png" alt="product-image">
-            <p class="lead text-uppercase">Pharell Williams</p>
-            <h5>NY Colorblock Top</h5>
-            <span>$299</span>
-            <div class="btn-group">
-                <div class="btn">f</div>
-                <div class="btn">f</div></div>
+            <img class="float-left" src="img/product_img__small.png" alt="product-image">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-subtitle text-muted text-uppercase">Pharell Williams</h6>
+                    <h5 class="card-title">NY Colorblock Top</h5>
+                    <div class="card__row">
+                        <span class="card-text card__price">$299</span>
+                        <div class="btn btn-group__controls">
+                            <div class="btn btn__custom btn-control__wrapper">
+                                <div class="btn__control btn__control_prev"></div>
+                            </div>
+                            <div class="btn-control__divider"></div>
+                            <div class="btn btn__custom btn-control__wrapper">
+                                <div class="btn__control btn__control_next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <button class="btn btn-primary btn-lg text-uppercase">Add to cart</button>
+            <button class="btn btn__custom btn__custom_inverted">Add to cart</button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <img class="img-fluid img__product" src="img/product_img.png" alt="product-image">
         </div>
     </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>

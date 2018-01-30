@@ -1,7 +1,41 @@
+//colors
 $transparent: transparent;
+$text-muted: #9d9d9d;
+$body-color: #000;
+
+//font
+$font-family-base: "Khula", sans-serif;
+
+//headings
+$headings-font-family: "Roboto", sans-serif;
+
+//forms
+$input-color: #000;
+$input-bg: $transparent;
+$input-placeholder-color: #000;
 
 //navbar
-$navbar-padding-y:                1.5rem;
-$navbar-padding-x:                2rem;
+$navbar-padding-y: 2rem;
+$navbar-padding-x: 2rem;
+$navbar-nav-link-padding-x: 1.875rem;
+$navbar-light-color: #000;
+$navbar-light-hover-color: #000;
+
+//dropdown
+$dropdown-min-width: 100%;
+
+//jumbotron
+$jumbotron-bg: $transparent;
+
+//card
+$card-border-color: #f2f0ec;
+$card-cap-bg: #fff;
+$card-bg:  $transparent;
+
+
+//buttons
+$input-btn-focus-box-shadow: none;
+
+$border-radius: none;
 
 @import "../../node_modules/bootstrap/scss/variables";
